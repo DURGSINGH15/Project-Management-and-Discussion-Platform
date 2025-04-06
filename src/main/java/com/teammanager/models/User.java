@@ -20,7 +20,7 @@ public class User {
     private String name;
 
     @Indexed(unique = true) //index on email: used for faster search + provides uniqueness
-    private String email;
+    private String email; //used for finding users by email inside database(via repository)
 
     private String password;
 
